@@ -5,6 +5,9 @@ $icon-font-path: '../../node_modules/bootstrap-sass/assets/fonts/bootstrap/';
 // Import Bootstrap
 @import '../../node_modules/bootstrap-sass/assets/stylesheets/bootstrap';
 
+//Import Variables
+@import 'variables';
+
 
 *,
 *::before,
@@ -16,7 +19,374 @@ img {
   max-width: 100%;
 }
 
-.octicon {
-  height: 100px;
+.clearfix {
+  clear: both;
+}
+
+.gutter {
+  padding: 0;
+}
+
+.outer-wrapper {
+  background-color: $backgroundGray;
+  height: 50px;
+  padding: 0;
+  border-bottom: 1px solid $borderGray;
+
+}
+
+.wrapper-head {
+  margin-bottom: 20px;
+}
+
+.mega-octicon1 {
   display: inline-block;
+  vertical-align: middle;
+}
+
+.left-header,
+.right-header {
+  line-height: 50px;
+}
+
+.left-header {
+  float: left;
+  padding: 0;
+}
+
+.right-header {
+  float: right;
+  position: absolute;
+  right: 0;
+}
+
+.left-header a {
+  font-weight: bold;
+  padding-left: 10px;
+  font-size: 13px;
+  text-decoration: none;
+  color: black;
+}
+
+.left-header a:hover {
+  color: $gitHubBlue;
+}
+
+.search-github {
+  height: 30px;
+  width: 380px;
+  border-radius: 3px;
+  margin-left: 8px;
+}
+
+.dropdown {
+  display: inline;
+}
+
+.dropdown {
+  button{
+  border: none;
+  }
+}
+
+.dropdown button:active {
+  background: none;
+}
+
+#dropdownMenu1 {
+  font-size: 26px;
+  font-weight: bold;
+  background: none;
+}
+
+#dropdownMenu1:hover {
+  color: $gitHubBlue;
+  background: none;
+}
+
+.me {
+  height: 20px;
+  width: 20px;
+  border-radius: 3px;
+}
+
+#dropdownMenu2 {
+  background: none;
+}
+
+#dropdownMenu2:hover {
+  background: none;
+  color: $gitHubBlue;
+}
+
+.me2 {
+  border-radius: 10px;
+}
+
+.my-name {
+  margin: 20px 0 0 0;
+  font-weight: bold;
+}
+.username {
+  color: #535353;
+  font-size: 20px;
+  font-weight: 200;
+
+}
+
+.new-green {
+  display: inline-block;
+  background-color: #5AC12C;
+  color: white;
+  height: 20px;
+  width: 40px;
+  text-align: center;
+  border-radius: 3px;
+}
+
+.green-new {
+  margin-top: 10px;
+  color: $gitHubBlue;
+  border-bottom: 1px solid $borderGray;
+  padding-bottom: 12px;
+  margin-bottom:12px;
+}
+
+.green-new a:hover {
+  color: $gitHubBlue;
+}
+
+.fa-clock-o {
+  -webkit-transform: scale(-1, 1);
+  -moz-transform: scale(-1, 1);
+  -ms-transform: scale(-1, 1);
+  -o-transform: scale(-1, 1);
+  transform: scale(-1, 1);
+  color: #878787;
+  margin-right: 6px;
+}
+
+.joined {
+  padding-bottom: 12px;
+  border-bottom: 1px solid $borderGray;
+  margin-bottom: 8px;
+}
+
+.follower span,
+.starred span,
+.following span {
+  display: block;
+}
+
+.follow a,
+.follow div {
+  display: inline-block;
+  text-decoration: none;
+  margin: 0 12px;
+}
+
+.num {
+  font-size: 32px;
+  font-weight: bold;
+  color: $gitHubBlue;
+  text-align: center;
+}
+
+.follow-text {
+  font-size: 10px;
+  color: black;
+  margin-top: -8px;
+  color: $textGray;
+}
+
+.follow {
+  border-bottom: 1px solid $borderGray;
+  padding-bottom: 12px;
+  margin-bottom: 12px;
+}
+
+.org {
+  font-size: 16px;
+  font-weight: bold;
+  display: block;
+}
+
+.org-img {
+  border-radius: 3px;
+  width: 40px;
+  height: 40px;
+  margin-top: 2px;
+}
+
+.nav a {
+  color: $textGray;
+}
+
+.nav .active{
+  color: black;
+}
+
+.tabs {
+  display: relative;
+}
+
+.edit {
+  position: absolute;
+  right: 15px;
+  top: 2px;
+  border-radius: 3px;
+  font-weight: bold;
+  background-color: #F5F5F5;
+  border: 1px solid $borderGray;
+  height: 28px;
+}
+
+a.edit-profile{
+  color: black;
+}
+.repo-search {
+  margin-top: 14px;
+  padding: 0 0 14px 0;
+  border-bottom: 1px solid $borderGray;
+  font-weight: bold;
+  height: 48px;
+}
+
+.input-button-style {
+  height: 36px;
+  border-radius: 3px;
+  border: 1px solid $borderGray;
+}
+
+.find {
+  width: 270px;
+}
+
+.repo-search-button{
+  background-color: #F5F5F5;
+  width: 60px;
+}
+
+.repo-new-button {
+  background: linear-gradient(top, #77DB53, #50A830);
+  background:-webkit-linear-gradient(top, #77DB53, #50A830);
+  background:-moz-linear-gradient(top, #77DB53, #50A830);
+  color: white;
+  width: 70px;
+  border: 1px solid #4A9E2C;
+}
+
+.repo-filter {
+  float: right;
+  a {
+    color: $gitHubBlue;
+  }
+  a:hover {
+    color: $gitHubBlue;
+  }
+  a,
+  button {
+    margin-left: 12px;
+  }
+}
+
+a.active-filter {
+  color: black;
+}
+
+a.active-filter:hover {
+  color: black;
+}
+
+.repo-wrapper {
+  border-bottom: 1px solid $borderGray;
+  padding: 30px 0;
+  position: relative;
+}
+
+.repo-url {
+  font-size: 20px;
+  font-weight: bold;
+  color: $gitHubBlue;
+  margin-bottom: 10px;
+}
+
+.repo-url:hover {
+  color: $gitHubBlue;
+}
+
+.repo-url,
+.updated {
+  display: block;
+}
+
+.updated,
+.language {
+  color: $textGray;
+}
+
+.star-forks {
+  float: right;
+  position: absolute;
+  right: 0;
+  top: 36px;
+  font-weight: bold;
+}
+
+a.stargazers,
+a.forks {
+  text-decoration: none;
+  color: $textGray;
+  margin-left: 8px;
+}
+
+a.stargazers:hover,
+a.forks:hover {
+  color: $gitHubBlue;
+}
+
+.updated,
+.language,
+.stargazers,
+.forks {
+  font-size: 12px;
+}
+
+.footer {
+  margin-top: 40px;
+  border-top: 1px solid $borderGray;
+  font-size: 12px;
+  line-height: 122px;
+  position: relative;
+}
+
+.left-footer {
+  span {
+    color: $textGray;
+  }
+  a {
+    color: $gitHubBlue
+  }
+  a:hover {
+    color: $gitHubBlue;
+  }
+  float: left;
+}
+
+.right-footer {
+  float: right;
+}
+
+.left-footer a,
+.right-footer a {
+  margin-left: 8px;
+}
+
+.mega-octicon2 {
+  display: inline;
+  color: #C1C1C1;
+  vertical-align: middle;
+  position: absolute;
+  left: 540px;
+  top: 45px;
 }
