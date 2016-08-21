@@ -4,7 +4,7 @@ var handlebars = require('handlebars');
 var githubtoken = require('./githubapikey.js');
 var moment = require('moment');
 var tabs = ('./bootstrap.min.js');
-// 
+//
 // if(githubtoken !== undefined){
 //   $.ajaxSetup({
 //     headers: {
@@ -58,9 +58,6 @@ function displayRepos(repos){
   $('.repos-list').prepend(renderRepoTemplate);
   });
 }
-
-//moment(updated_at).fromNow()
-
 
 $('#overview').click(function (e) {
   e.preventDefault()
